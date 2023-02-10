@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style__sign__up.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Project__Sign__up__in__BDS</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card__intro">
+            <div class="logo">
+                <img src="./Project__img/header-logo-sisu.4b76e0ce.svg" alt="">
+            </div>
+            <div class="image">
+                <img src="./Project__img/New Bitmap Image (2).bmp" alt="">
+            </div>
+            <div class="title">
+                Tìm nhà đất<br>
+                Batdongsan.com.vn dẫn lối
+            </div>
+        </div>
+        <div class="card__content">
+            <div class="title">
+                Xin chào bạn<br>
+                <p>Đăng ký tài khoản mới</p>
+            </div>
+            <div class="input">
+                <i class='bx bx-phone-call'></i>
+                <input type="text" id="minput" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="button__next">
+                <button id="next__btn" disabled>Tiếp tục</button>
+            </div>
+            <div class="link">
+                <button><i class='bx bxl-facebook-square'></i>
+                    <p>Facebook</p>
+                </button>
+                <button><i class='bx bxl-google'></i>
+                    <p>Google</p>
+                </button>
+            </div>
+            <div class="commit">
+                Bằng việc tiếp tục, bạn đồng ý với
+                <a href="#">Điều khoản sử dụng</a>
+                của chúng tôi
+            </div>
+            <div class="choie">
+                Bạn đã có tài khoản?
+                <a href="./index__sign__in.html">Đăng nhập</a>
+                tại đây
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById("minput");
+        const button = document.getElementById("next__btn");
+        button.addEventListener("click", function () {
+            button.style.border = "none";
+        });
+        input.addEventListener("input", function () {
+            if (input.value.length > 0)
+            {
+                button.style.backgroundColor = "red";
+            button.disabled = false;
+            } else{
+                button.style.backgroundColor = "";
+                button.disabled = true;
+            }
+        });
+    </script>
+</body>
+
+</html>
