@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: rgb(44, 44, 44);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,46 +16,49 @@ body{
 
 .card{
     width: 800px;
-    height: 600px;
+    height: 576px;
     background: #fff;
     display: flex;
     margin-top: 30px;
     box-shadow: rgb(44 44 44 / 6%) 0px 4px 16px;
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
 .card__intro{
-    width: 350px;
+    width: 338px;
     background: #ffeceb;
 }
 
 .card__intro .logo img{
-    width: 200px;
+    width: 160px;
     margin: 30px;
 }
 
 .card__intro .title{
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 500;
     font-weight: bold;
-    margin: 10px;
+    margin: 25px;
 }
 
 .card__content{
-    width: 450px;
+    width: 467px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .card__content .title{
+    font-size: 16px;
     margin-top: 70px;
     font-weight: bold;
     margin-left: -100px;
+    margin-left: -140px;
 }
 
 .card__content .title p{
-    font-size: 25px;
+    font-size: 24px;
     margin-top: 10px;
 }
 
@@ -63,19 +67,21 @@ body{
 }
 
 .input input{
-    width: 370px;
-    height: 48px;
-    border-radius: 5px;
+    width: 400px;
+    height: 50px;
+    color: rgb(44, 44, 44);
+    font-size: 14px;
+    border-radius: 8px;
     border: 1px solid rgb(204, 204, 204);
-    text-indent: 35px;
+    text-indent: 48px;
     margin-top: 40px;
 }
 
 .input i{
-    font-size: 25px;
+    font-size: 28px;
     position: absolute;
     margin-top: 50px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .input input:hover{
@@ -92,13 +98,13 @@ body{
 }
 
 .card__content .button__next button{
-    width: 370px;
-    height: 40px;
+    width: 400px;
+    height: 50px;
     color: #fff;
     font-weight: bold;
     font-size: 15px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     background: #f3b1ad;
     margin-top: 25px;
     cursor: pointer;
@@ -109,15 +115,30 @@ body{
 }
 
 .link button{
-    width: 150px;
-    height: 40px;
+    width: 192px;
+    height: 48px;
     background: #fff;
-    font-size: 15px;
+    font-size: 14px;
+    color: rgb(44, 44, 44);
+    font-weight: 550;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     margin: 5px;
     cursor: pointer;
     transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link .fb button i{
+    font-size: 25px;
+    color: blue;
+}
+
+.link button p{
+    margin-bottom: -5px;
+    margin-left: 8px;
 }
 
 .link button:hover{
@@ -133,17 +154,18 @@ body{
 }
 
 .link i{
-    color: green;
+    color: blue;
 }
 
 .commit{
+    color: rgb(153, 153, 153);
     font-size: 12px;
     margin-top: 16px;
 }
 
 .commit a{
     text-decoration: none;
-    color: red;
+    color: rgb(224, 60, 49);
 }
 
 .commit a:hover{
@@ -151,12 +173,15 @@ body{
 }
 
 .choie{
-    margin-top: 120px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 90px;
 }
 
 .choie a{
     text-decoration: none;
-    color: red;
+    color: rgb(224, 60, 49);
+    font-weight: 600;
 }
 
 .choie a:hover{
@@ -217,3 +242,9 @@ body{
         margin-right: 25px;
     }
   }
+
+/* fix */
+
+.link{
+    display: flex;
+}
